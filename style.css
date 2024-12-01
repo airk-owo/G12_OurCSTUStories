@@ -156,6 +156,25 @@ textarea {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: none; /* ปิดการปรับขนาด */
+    resize: none; 
     box-sizing: border-box;
 }
+#entries
+{
+    width: 400px; 
+    padding: 15px; 
+    margin: 0;
+    border-radius: 15px; 
+    background-color: #f0f8ff;
+    font-size: 25px;
+    font-family: 'Sharky', sans-serif;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    top: 10px;
+    left: 10px; 
+    position: fixed; 
+    border: 3px solid red;
+}
+
+
