@@ -27,6 +27,28 @@
     top: 10px;
     right: 10px; 
 }
+.info {
+    width: 100px;
+    height: 100px;
+    background: url('image/PngItem_5033562.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: 10px; 
+}
+.work {
+    width: 100px;
+    height: 100px;
+    background: url('image/PngItem_14114.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 220px;
+    right: 10px; 
+}
 body
 {
         margin: 0;
@@ -38,6 +60,8 @@ body
         align-items: center; 
         background: url('image/chrismas.png') no-repeat center center;
         background-size: cover; 
+        background-attachment: fixed;
+       
     }
         
 
@@ -78,3 +102,52 @@ body
         background-color: #B22222; 
         color: white;
     }
+
+    
+    
+    .hidden {
+        display: none;
+    }
+    
+  #summit
+  {
+     
+        width: 250px; 
+        padding: 15px; 
+        margin: 10px;
+        border-radius: 15px; 
+        background-color: #f0f8ff;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Sharky', sans-serif;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+
+  }
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 10px 16px red;
+    color: #333333;
+    width: 800px
+   
+}
+h1{
+
+    text-align: center;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* ปิดการปรับขนาด */
+    box-sizing: border-box;
+}

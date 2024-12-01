@@ -7,11 +7,32 @@
     <link rel="stylesheet" href="style.css"
 </head>
 <body>
-    <div id="snow-container"></div>
+
     <h1 class = "header">Home Page</h1>
-    <button class="gift" ></button>
+    <button class ="work" id = "work"></button>
+    <button class ="info" id = "info"></button>
+    <div id="entries" style="display: none;"></div>
+    <button class="gift" id="gift" ></button>
+    <div id="formContainer" class="hidden">
+        <form id="Form">
+            <h1>🎅Guest gift🎁</h1>
+            <label for="engname">Name-Surname<span style="color:red;">*</span></label>
+            <br>
+            <input type="text" id="engname" name="eng-name" required placeholder="Name-Surname">
+            <br><br>
+        
+            <label for="comment">Comment<span style="color:red;">*</span></label>
+            <br>
+            <textarea id="comment" name="comment" placeholder="Write your comment here..."></textarea>
+            <br><br>
+            
+            <button id="summit" type="submit">Summit</button>
+            <div id="error-message" style="color:red; display:none;">Please fill in all fields.</div>
+        </form>
+        
+    
+    </div>
     <button class = "journey" >Our Journey</button>
-    <br>
     <br>
     <button class = "future" >Our Future</button>
    
