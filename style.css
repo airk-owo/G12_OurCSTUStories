@@ -46,7 +46,7 @@
     top: 120px;
     right: 10px; 
 }
-.work {
+#members {
     width: 100px;
     height: 100px;
     background: url('image/PngItem_14114.png') no-repeat center center;
@@ -71,6 +71,24 @@ body
         background-attachment: fixed;
        
     }
+    .poster{
+        background-image: url('image/wer.jpg');
+        width: 650px;
+        height: 1800px;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    
         
 
 
@@ -116,6 +134,7 @@ body
     .hidden {
         display: none;
     }
+    
     
   #summit
   {
@@ -176,5 +195,7 @@ textarea {
     position: fixed; 
     border: 3px solid red;
 }
+
+
 
 

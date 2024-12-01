@@ -1,31 +1,22 @@
+//ฟอร์ม
 document.getElementById('gift').addEventListener('click', function() {
     const formContainer = document.getElementById('formContainer');
     formContainer.classList.toggle('hidden');
 });
-document.getElementById('Form').addEventListener('submit', function(event) {
-    event.preventDefault();  
-
-    const name = document.getElementById('engname').value;
-    const comment = document.getElementById('comment').value;
-
-    if (name === '' || comment === '') {
-        document.getElementById('error-message').style.display = 'block';
-    } else {
-        document.getElementById('error-message').style.display = 'none'; 
-    
-        alert("Form submitted successfully!");
-    }
+document.getElementById('members').addEventListener('click', function() {
+    const box = document.getElementById('box');
+    box.classList.toggle('hidden');
 });
-
+//snowfall
 document.querySelectorAll('.snowflake').forEach(snowflake => {
     const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 75%)`;
     snowflake.style.color = randomColor;
 });
 
-
 let guestbookEntries = [];
 
-document.getElementById('summit').addEventListener('click', function() {
+//รับคอมเมต์
+document.getElementById('summit').addEventListener('click', function(event) {
     const name = document.getElementById('name').value;
     const comment = document.getElementById('comment').value;
 
@@ -37,11 +28,12 @@ document.getElementById('summit').addEventListener('click', function() {
         alert('Please fill out both fields.');
     }
 });
+//แสดงกล่องentries
 document.getElementById('info').addEventListener('click', function() {
     const entriesContainer = document.getElementById('entries');
     entriesContainer.style.display = 'block'; 
 });
-
+//แสดงข้อความ
 document.getElementById('info').addEventListener('click', function() {
     
     const entriesContainer = document.getElementById('entries');
@@ -53,6 +45,7 @@ document.getElementById('info').addEventListener('click', function() {
     });
     document.getElementById('guestbookDisplay').style.display = 'block';
 });
+//ซ่อนentries
 document.getElementById('gift').addEventListener('click', function() {
     const entriesContainer = document.getElementById('entries');
     entriesContainer.style.display = 'none';
