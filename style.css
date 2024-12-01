@@ -16,9 +16,17 @@
     color: white;
 
 }
+.head
+{
+    font-family: 'Sharky', sans-serif;
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+
+}
 .gift {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background: url('image/gift2.png') no-repeat center center;
     background-size: contain;
     border: none;

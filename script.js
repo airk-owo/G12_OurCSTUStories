@@ -18,4 +18,9 @@ document.getElementById('Form').addEventListener('submit', function(event) {
     document.getElementById('Form').reset();
 });
 
+document.querySelectorAll('.snowflake').forEach(snowflake => {
+    const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 75%)`;
+    snowflake.style.color = randomColor;
+});
+
 
