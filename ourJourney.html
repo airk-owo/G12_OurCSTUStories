@@ -6,37 +6,110 @@
     <title>Our Journey Hilights</title>
     <style>
         body {
-            background-color: cornsilk;
+            font-family: 'Arial',sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffe4e1;
+            color:#333;
+            overflow: hidden;
+        }
+        header {
+            background-color: #f1d900;
+            color: #d6001c;
+            text-align: center;
+            padding:30px 0;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .navbar {
+            width: 100;
+            display: flex;
+            background-color: #cf24249c;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0px 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f0a500;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px  auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            position: relative;
+        }
+        .topic {
+            color: #d32f2f;
+            border-left: 5px solid #d32f2f;
+            padding-left: 10px;
+            font-size: 2.5em;
+        }
+        .data {
+            list-style-type: none;
+            padding: 0;
+        }
+        .data li{
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #4caf50;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><center>Our Journey Hilights</center></h1>
+        <h1><center>🎄Our Journey Hilights🎄</center></h1>
     </header>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="ourjourney.html">Our Journey</a></li>
+            <li><a href="ourfuture.html">Our Future</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Freshman</h2>
-            <ul>
+        <h2 class="topic">Freshman</h2>
+            <ul class="data">
                 <li>Build up friendship. (with friends in the University)</li>
                 <li>Enjoying new life as freshman as in University.</li>
                 <li>Find Oneself. (skills,sport,hobby)</li>
                 <li>Develop language skills. (English,Chinese)</li>
             </ul>
-        <h2>Sophomore</h2>
-            <ul>
+        <h2 class="topic">Sophomore</h2>
+            <ul class="data">
                 <li>Participate in various activities in campus.</li>
                 <li>Participate in compettion about Computer skills.</li>
                 <li>Develop coding skills.</li>
             </ul>
-        <h2>Junior</h2>
-            <ul>
+        <h2 class="topic">Junior</h2>
+            <ul class="data">
                 <li>Intern</li>
                 <li>Participate in compettion about Computer skills.</li>
                 <li>Plan my future for work after educated.</li>
                 <li>Develop advance coding skills.</li>
             </ul>
-        <h2>Senior</h2>
-            <ul>
+        <h2 class="topic">Senior</h2>
+            <ul class="data">
                 <li>Intern</li>
                 <li>Looking for work.</li>
                 <li>Preparing for Master's Degree Study.</li>
