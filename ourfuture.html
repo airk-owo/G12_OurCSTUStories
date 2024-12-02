@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #ffe4e1;
             color:#333;
+            overflow: hidden;
         }
         header {
             background-color: #d32f2f;
@@ -61,6 +62,22 @@
             position: absolute;
             right: 10px;
             top: 10px;
+        }
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 1rem;
+            pointer-events: none;
+            animation:fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(30px);
+            }
         }
 
         @media (min-width: 600px){
@@ -127,6 +144,30 @@
     <footer>
         <p>&copy;May your goals be achieved as you wish !🎁</p>
     </footer>
+
+    <script>
+        const snowflake = [];
+        const colors = ['#FFFFFF', '#E0FFFF', '#B0E0E6'];
+
+        function createSnoeflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDirection = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            snowflake.style.color = colors[Math.floor(Math.random() * colors.length)];
+            document.body.appendChild(snowflake);
+            snowflake.push(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+                snowflakeS.shift();
+            }, 5000);
+        }
+
+        setInterval(createSnoeflake, 200);
+    </script>
     
 </body>
 </html>
