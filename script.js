@@ -2,16 +2,14 @@
 document.getElementById('gift').addEventListener('click', function() {
     const formContainer = document.getElementById('formContainer');
     formContainer.classList.toggle('hidden');
+//members
 });
 document.getElementById('members').addEventListener('click', function() {
     const box = document.getElementById('box');
     box.classList.toggle('hidden');
 });
-//snowfall
-document.querySelectorAll('.snowflake').forEach(snowflake => {
-    const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 75%)`;
-    snowflake.style.color = randomColor;
-});
+
+
 
 let guestbookEntries = [];
 
