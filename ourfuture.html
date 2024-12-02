@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #ffe4e1;
             color:#333;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         header {
             background-color: #d32f2f;
@@ -64,10 +64,12 @@
             top: 10px;
         }
         .snowflake {
-          color: #d1eaf5;
-          font-size: 3em;
-          font-family: Arial, sans-serif;
-          text-shadow: 0 0 10px #0f52ba;
+            position: absolute;
+            top: -10;
+            color:white;
+            font-size: 1rem;
+            pointer-events: none;
+            animation: fall linear infinite;
         }
         
         .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}
