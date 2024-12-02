@@ -73,8 +73,12 @@ body
     }
     .poster{
         background-image: url('image/wer.jpg');
-        width: 650px;
-        height: 1800px;
+        background-size: cover; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        width: 500px;
+        height: 400px;
         padding: 20px;
         text-align: center;
         display: block;
@@ -107,6 +111,23 @@ body
         transition: background-color 0.3s;
       
     }
+    .mem
+{
+    font-family: 'Sharky', sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.names
+{
+    font-family: 'Sharky', sans-serif;
+    color: black;
+    font-size: 30px;
+
+}
+
+
 .journey
 {
         width: 500px; 
@@ -195,7 +216,6 @@ textarea {
     position: fixed; 
     border: 3px solid red;
 }
-
 
 
 
