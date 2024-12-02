@@ -6,6 +6,10 @@
         font-family: 'Sharky';
         src: url('image/christmas_shaky/Christmas\ Shaky.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Futura';
+    src: url('image/Futura/Futura\ Light.ttf') format('truetype');
+}
   
 .header
 {
@@ -36,25 +40,25 @@
     right: 10px; 
 }
 .info {
-    width: 100px;
-    height: 100px;
-    background: url('image/PngItem_5033562.png') no-repeat center center;
+    width: 80px;
+    height: 80px;
+    background: url('image/book.png') no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 120px;
+    top: 110px;
     right: 10px; 
 }
 #members {
-    width: 100px;
-    height: 100px;
-    background: url('image/PngItem_14114.png') no-repeat center center;
+    width: 80px;
+    height: 80px;
+    background: url('image/star.png') no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 220px;
+    top: 210px;
     right: 10px; 
 }
 body
@@ -78,11 +82,12 @@ body
         flex-direction: column; 
         justify-content: center; 
         width: 500px;
-        height: 400px;
+        height: 500px;
         padding: 20px;
         text-align: center;
         display: block;
         margin: auto;
+        position: absolute;
     }
     
     .hidden {
@@ -117,7 +122,6 @@ body
     color: black;
     font-size: 40px;
     font-weight: bold;
-    margin: 5px;
     
 }
 .names
@@ -208,7 +212,7 @@ textarea {
     border-radius: 15px; 
     background-color: #f0f8ff;
     font-size: 25px;
-    font-family: 'Sharky', sans-serif;
+    font-family: 'Futura', sans-serif;
     color: black;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -216,6 +220,7 @@ textarea {
     left: 10px; 
     position: fixed; 
     border: 3px solid red;
+    word-wrap: break-word;
 }
 
 
