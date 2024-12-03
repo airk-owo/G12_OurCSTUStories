@@ -110,7 +110,6 @@ body
         padding: 10px;
     }
     #memberPic {
-
         width: 100px;
         height: 100px;
     }
@@ -148,7 +147,7 @@ body
         
         cursor: pointer;
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         left: 10px; 
     }
   
