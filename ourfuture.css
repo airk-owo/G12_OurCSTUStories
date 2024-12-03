@@ -130,3 +130,10 @@ body:after {
         .snowflake:nth-of-type(9) .inner{animation-delay:3s}
         .snowflake:nth-of-type(10){left:25%;animation-delay:0s}
         .snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+
+@media screen and (max-width: 500px) {
+    body:after {
+        content: '🎅';
+        font-size: 28px;
+    }
+}

@@ -35,7 +35,7 @@
     background-size: contain;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px; 
 }
@@ -46,7 +46,7 @@
     background-size: contain;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 110px;
     right: 10px; 
 }
@@ -57,7 +57,7 @@
     background-size: contain;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 210px;
     right: 10px; 
 }
@@ -135,8 +135,8 @@ body
         display: none;
     }
     .toggleButton {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -146,17 +146,17 @@ body
         background-color: #ffffff00;
         
         cursor: pointer;
-        position: absolute;
-       bottom: 150px;
+        position: fixed;
+       bottom: 40px;
         left: 40px; 
     }
   
     .playButton {
-        background-image: url('image/singellbell.png');
+        background-image: url('image/belloff.png');
     }
   
     .pauseButton {
-        background-image: url('image/doublebell.png');
+        background-image: url('image/bellon.png');
     }
         
 
@@ -342,3 +342,53 @@ textarea {
           .snowflakes.active {
             display: block; 
           }
+
+@media screen and (max-width: 500px) {
+    .body {
+        width: auto;
+    }
+    .header {
+        margin-top: 150px;
+        font-size: 45px;
+    }
+    .toggleButton {
+        bottom: 10px;
+        left: 10px;
+    }
+    form {
+        width: auto;
+    }
+    #entries {
+        width: 65%;
+    }
+    .poster {
+        width: 190px;
+        height: auto;
+        top: 0px;
+    }
+    .future {
+        width: 300px;
+    }
+    .journey {
+        width: 300px;
+    }
+    .gift {
+        width: 60px;
+        right: 10px;
+        top: 0px;
+    }
+    .info {
+        width: 60px;
+        right: 10px;
+        top: 70px;
+    }
+    #members {
+        width: 60px;
+        right: 10px;
+        top: 140px
+    }
+    .toggleButton {
+        width: 60px;
+        height: 60px;
+    }
+}
