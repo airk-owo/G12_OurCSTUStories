@@ -1,15 +1,18 @@
 //ฟอร์ม
-document.getElementById('gift').addEventListener('click', function() {
+document.getElementById('gift').addEventListener('click', function () {
     const formContainer = document.getElementById('formContainer');
     formContainer.classList.toggle('hidden');
-//members
+  
 });
+
+
+
+//members
 document.getElementById('members').addEventListener('click', function() {
     const box = document.getElementById('box');
     box.classList.toggle('hidden');
+   
 });
-
-
 
 let guestbookEntries = [];
 
@@ -31,9 +34,17 @@ document.getElementById('summit').addEventListener('click', function(event) {
 });
 
 //แสดงกล่องentries
-document.getElementById('info').addEventListener('click', function() {
+document.getElementById('info').addEventListener('click', function () {
     const entriesContainer = document.getElementById('entries');
-    entriesContainer.style.display = 'block'; 
+    const button = document.getElementById('info');
+
+    if (entriesContainer.style.display === 'block') {
+        entriesContainer.style.display = 'none';
+        button.textContent = ''; 
+    } else {
+        entriesContainer.style.display = 'block';
+        button.textContent = ''; 
+    }
 });
 //แสดงข้อความ
 document.getElementById('info').addEventListener('click', function() {
@@ -54,7 +65,9 @@ document.getElementById('gift').addEventListener('click', function() {
 });
 
 const bgm = document.getElementById('bgm');
+
     const toggleButton = document.getElementById('toggleButton');
+    const snowflakes = document.getElementById('snowflakes')
     let isPlaying = false;
 
     //สลับสถานะการเล่น
@@ -63,12 +76,14 @@ const bgm = document.getElementById('bgm');
         bgm.pause();
         toggleButton.classList.remove('pauseButton');
         toggleButton.classList.add('playButton');
+        snowflakes.classList.add('snowflakes');
       } else {
         bgm.play().catch(error => {
           console.warn('Cannot play audio:', error);
         });
         toggleButton.classList.remove('playButton');
         toggleButton.classList.add('pauseButton');
+        snowflakes.classList.remove('snowflakes');
       }
       isPlaying = !isPlaying;
     });

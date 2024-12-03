@@ -135,8 +135,8 @@ body
         display: none;
     }
     .toggleButton {
-        width: 30px;
-        height: 30px;
+        width: 120px;
+        height: 120px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -147,16 +147,16 @@ body
         
         cursor: pointer;
         position: absolute;
-        bottom: 10px;
-        left: 10px; 
+       bottom: 150px;
+        left: 40px; 
     }
   
     .playButton {
-        background-image: url('image/Button/mute.png');
+        background-image: url('image/singellbell.png');
     }
   
     .pauseButton {
-        background-image: url('image/Button/volume.png');
+        background-image: url('image/doublebell.png');
     }
         
 
@@ -282,6 +282,9 @@ textarea {
     border: 3px solid red;
     word-wrap: break-word;
 }
+.snowflakes {
+    display: none; 
+  }
 
 .snowflake {
     color: #d1eaf5d8;
@@ -331,3 +334,11 @@ textarea {
           .snowflake:nth-of-type(9) .inner{animation-delay:3s}
           .snowflake:nth-of-type(10){left:25%;animation-delay:0s}
           .snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+
+          #snowContainer {
+            display: none; 
+          }
+          
+          .snowflakes.active {
+            display: block; 
+          }
