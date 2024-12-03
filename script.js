@@ -72,3 +72,26 @@ const bgm = document.getElementById('bgm');
       }
       isPlaying = !isPlaying;
     });
+
+//snowflake ใน ourfuture
+    const snowflake = [];
+    const colors = ['#FFFFFF', '#E0FFFF', '#B0E0E6'];
+
+    function createSnoeflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.textContent = '❄';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDirection = Math.random() * 3 + 2 + 's';
+        snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+        snowflake.style.color = colors[Math.floor(Math.random() * colors.length)];
+        document.body.appendChild(snowflake);
+        snowflake.push(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+            snowflakeS.shift();
+        }, 5000);
+    }
+
+    setInterval(createSnoeflake, 200);
