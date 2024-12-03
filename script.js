@@ -53,3 +53,22 @@ document.getElementById('gift').addEventListener('click', function() {
     entriesContainer.style.display = 'none';
 });
 
+const bgm = document.getElementById('bgm');
+    const toggleButton = document.getElementById('toggleButton');
+    let isPlaying = false;
+
+    //สลับสถานะการเล่น
+    toggleButton.addEventListener('click', () => {
+      if (isPlaying) {
+        bgm.pause();
+        toggleButton.classList.remove('pauseButton');
+        toggleButton.classList.add('playButton');
+      } else {
+        bgm.play().catch(error => {
+          console.warn('Cannot play audio:', error);
+        });
+        toggleButton.classList.remove('playButton');
+        toggleButton.classList.add('pauseButton');
+      }
+      isPlaying = !isPlaying;
+    });

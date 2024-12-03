@@ -31,7 +31,7 @@
 .gift {
     width: 80px;
     height: 80px;
-    background: url('image/gift2.png') no-repeat center center;
+    background: url('image/Button/gift.png') no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
@@ -42,7 +42,7 @@
 .info {
     width: 80px;
     height: 80px;
-    background: url('image/book.png') no-repeat center center;
+    background: url('image/Button/book.png') no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
@@ -53,7 +53,7 @@
 #members {
     width: 80px;
     height: 80px;
-    background: url('image/star.png') no-repeat center center;
+    background: url('image/Button/star.png') no-repeat center center;
     background-size: contain;
     border: none;
     cursor: pointer;
@@ -131,6 +131,33 @@ body
         height: 2px;
         background-color: #107732;
         border: none;
+    }
+    #bgm {
+        display: none;
+    }
+    .toggleButton {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background-color: #ffffff00;
+        
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px; 
+    }
+  
+    .playButton {
+        background-image: url('image/Button/mute.png');
+    }
+  
+    .pauseButton {
+        background-image: url('image/Button/volume.png');
     }
         
 

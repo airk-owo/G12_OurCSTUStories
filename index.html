@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OurCSTUStories</title>
+    <title>OUR CSTU STORIES</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <audio id="bgm" loop>
+    <source src="sound/jingle bell bgm.mp3" type="audio/mpeg">
+    <source src="sound/jingle bell bgm.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
 
     <h1 class = "header">Home Page</h1>
     <button class ="info" id = "info" title="Guest Book"></button>
     <div id="entries" style="display: none;"></div>
+
     <button class="gift" id="gift" title="Guest Gift"></button>
     <div id="box" class="poster hidden">
       <p class = "mem">Members🎅</p>
@@ -52,6 +58,8 @@
         
     </div>
     <button id="members" title="Members"></button>
+
+    <button id="toggleButton" class="toggleButton playButton"></button>
     
     <div id="formContainer" class="hidden">
         <form id="Form">
