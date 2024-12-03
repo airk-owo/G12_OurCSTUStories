@@ -1,19 +1,27 @@
 //ฟอร์ม
 document.getElementById('gift').addEventListener('click', function () {
     const formContainer = document.getElementById('formContainer');
-    formContainer.classList.toggle('hidden');
-  
-});
-
-
-
-//members
-document.getElementById('members').addEventListener('click', function() {
     const box = document.getElementById('box');
-    box.classList.toggle('hidden');
-   
-});
 
+   
+    if (formContainer.classList.contains('hidden')) {
+      formContainer.classList.remove('hidden'); 
+      box.classList.add('hidden');             
+    } else {
+      formContainer.classList.add('hidden');   
+    }
+  });
+//กล่อง
+  document.getElementById('members').addEventListener('click', function () {
+    const formContainer = document.getElementById('formContainer');
+    const box = document.getElementById('box');
+    if (box.classList.contains('hidden')) {
+      box.classList.remove('hidden');         
+      formContainer.classList.add('hidden');   
+    } else {
+      box.classList.add('hidden');             
+    }
+  });
 let guestbookEntries = [];
 
 //รับคอมเมต์
