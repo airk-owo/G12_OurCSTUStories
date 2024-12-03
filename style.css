@@ -82,7 +82,7 @@ body
         flex-direction: column; 
         justify-content: center; 
         width: 500px;
-        height: 600px;
+        height: 620px;
         padding: 20px;
         text-align: center;
         display: block;
@@ -120,6 +120,18 @@ body
         color: rgb(6, 100, 70);
         margin-top: -5px;
     }
+    #memberMessage {
+        margin: 0px;
+        color: #B22222;
+        font-family: Futura, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #memberLine {
+        height: 2px;
+        background-color: #107732;
+        border: none;
+    }
         
 
 
@@ -138,13 +150,13 @@ body
         transition: background-color 0.3s;
       
     }
-    .mem
+.mem
 {
     font-family: 'Sharky', sans-serif;
     color: black;
     font-size: 40px;
     font-weight: bold;
-    
+    margin: 30px;
 }
 .names
 {
